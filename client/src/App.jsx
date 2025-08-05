@@ -1,18 +1,16 @@
-import { useState } from 'react'
 import './App.css'
 import Preview from './pages/Preview'
 import Layout from './components/Layout'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import Container from './components/Container'
-import Propertylistings from './pages/PropertyLiisting.jsx'
-import PropertyDetails from './pages/Propertydeatils.jsx'
+import Propertylistings from './pages/PropertyListing.jsx'
+import PropertyDetails from './pages/PropertyDetails.jsx'
 import Search from './pages/Search.jsx'
 import SignupPage from './pages/SignupPage.jsx'
 import AddProperty from './pages/AddProperty.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<Container/>} >

@@ -7,8 +7,8 @@ import {
     removePropertyListing,
     getUserListings
 } from '../controllers/user.controllers.js'
-import { verifyJWT } from "../middlewars/auth.middlewares.js";
-import {upload} from '../middlewars/multer.middlewares.js'
+import { verifyJWT } from "../middlewares/auth.middlewares.js";
+import {upload} from '../middlewares/multer.middlewares.js'
 
 
 const router = Router()
