@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import image1 from '../assets/luxaryRoom.jpg'
 import image2 from '../assets/buildings.jpg'
 import image3 from '../assets/smallhome.jpg'
@@ -84,13 +84,13 @@ return (
                 </div>
                 <div className="bg-gray-200 p-3 rounded-lg">
                     <div className="flex gap-2 p-2"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
-                    <p className="p-2 mb-16"> Top notch service five start all the way. Couldn't be Happier </p>
+                    <p className="p-2 mb-16"> Top notch service five start all the way. Couldn&apos;t be Happier </p>
                     <p className="px-2">Liam johnson</p> 
                     <p className="px-2">Property Expert</p> 
                 </div>
                 <div className="bg-gray-200 p-3 rounded-lg">
                     <div className="flex gap-2 p-2"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
-                    <p className="p-2 mb-10">Once you are a real State pro you can't look back. Must have for real estate Professionals </p>
+                    <p className="p-2 mb-10">Once you are a real State pro you can&apos;t look back. Must have for real estate Professionals </p>
                     <p className="px-2">Liam johnson</p> 
                     <p className="px-2">Property Expert</p> 
                 </div>

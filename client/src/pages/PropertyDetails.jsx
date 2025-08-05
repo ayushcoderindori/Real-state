@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import seller from '../assets/seller.png'
 
@@ -21,7 +21,7 @@ const PropertyDetails = function(){
             setpropertyData(res.data)
             setLoading(false)
         }).catch(err => console.log(err))
-    },[])
+        },[id])
 
     // console.log(propertyData.seller.fullname);
 

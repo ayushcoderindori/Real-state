@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 function Search(){
@@ -28,7 +28,7 @@ function Search(){
             else setError(false)
         })
         setLoading(false)
-    },[])
+        },[location])
 
     const getData = function(){
         setLoading(true)

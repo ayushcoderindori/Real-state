@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import homeImage from '../assets/home.svg'
 import deal from '../assets/deal.svg'
 import { FaHome } from "react-icons/fa";
@@ -11,7 +11,6 @@ const Preview = function(){
     const navigate = useNavigate()
     const[error,setError] = useState(false)
     const [errorMessage,setErrorMessage] = useState("Something went wrong")
-    const [message,setmessage] = useState(false)
 
     const handleSubmit = async (e)=>{
         e.preventDefault()
@@ -37,14 +36,14 @@ const Preview = function(){
         setUserName("")
         // console.log(response);
         if(response && response.status == 200){
-            setmessage(false)
+
             navigate(`/user/home`)
             setError(false)
         }
         else if(response.status == "402"){
             setError(true)
             setErrorMessage("Incorrect Password")
-            setmessage(true)
+            
         }
         else{
             setError(true)
